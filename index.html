@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebing Us!? MOD サーバー</title>
+    <link rel="stylesheet" href="xeltica-ui.min.css">
+    <link rel="stylesheet" href="ebing.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+</head>
+<body class="dark e-body">
+    <div class="container e-container">
+        <header class="hero mb-5">
+            <h1 class="text-center">Ebing Us!? MODサーバー</h1>
+            <p>Ebing Us!? MODサーバー（通称エビアス鯖）は、普段のAmong Usと違い、Xelticaがセルフ・ホスティングしているAmong Usサーバーです。</p>
+            <p>自作プラグインで新しい遊びを提供できるという特徴があり、私の実験的機能追加で溢れていく予定です。</p>
+            <p>簡単なパッチ当てだけで参加でき、通常のAmong Usと同様に、部屋を作ってみんなで遊べます！</p>
+            <div class="le-phone vstack mt-3">
+                <a href="#features" class="btn au">独自機能</a>
+                <a href="#getting-started" class="btn au">導入方法</a>
+                <a href="#terms" class="btn au">注意</a>
+                <a href="#discord" class="btn au">Discord</a>
+            </div>
+            <div class="ge-phone hstack mt-3" style="justify-content: center;">
+                <a href="#features" class="btn au">独自機能</a>
+                <a href="#getting-started" class="btn au">導入方法</a>
+                <a href="#terms" class="btn au">注意</a>
+                <a href="#discord" class="btn au">Discord</a>
+            </div>
+        </header>
+        <div class="vstack">
+            <article id="features">
+                <h1><i class="fas fa-bolt fa-fw"></i>独自機能</h1>
+                <ul class="vstack">
+                    <li>
+                        <i class="fas fa-ghost fa-fw"></i>
+                        第三陣営「てるてる」
+                        <span class="text-pink">ベータ版</span>
+                        <ul>
+                            <li>クルーの中からランダムに1人選ばれ、名前欄とチャットで通知される（他の人には見えない）</li>
+                            <li>
+                                勝利条件は、「吊られること」
+                                <ul>
+                                    <li>噛まれたり、生存したりしてはいけない</li>
+                                </ul>
+                            </li>
+                            <li>よって、てるてるは素性を隠しながら、インポスターを装う必要がある</li>
+                            <li>軽率に吊りづらくなる</li>
+                        </ul>
+                    </li>
+                </ul>
+                <details>
+                    <summary class="text-primary">開発中の独自機能を見てみる？</summary>
+                    <ul class="vstack">
+                        <li style="opacity: 0.6">
+                            <i class="fas fa-heart fa-fw"></i>
+                            第三陣営「恋人」
+                            <span class="text-yellow">開発中</span>
+                            <ul>
+                                <li>プレイヤーの中からランダムに2人が選ばれ「恋人」となる</li>
+                                <li>ゲーム開始時に自分が恋人ロールであり、相方が誰かが名前欄・チャットに表示（他の人には見えない）</li>
+                                <li>勝利条件は、2人揃って最後まで生き残ること</li>
+                                <li>片方</li>
+                                <li>
+                                    <b class="text-cyan">クルー</b>×<b class="text-cyan">クルー</b>、
+                                    <b class="text-cyan">クルー</b>×<b class="text-red">インポスター</b>、
+                                    <b class="text-red">インポスター</b>×<b class="text-red">インポスター</b>
+                                    のカップルがありえる
+                                </li>
+                                <li>インポスターラインか恋人ラインかの見極めが発生する</li>
+                                <li>クルー×インポスターの場合、相方インポスターから恋人を守る必要あり</li>
+                            </ul>
+                        </li>
+                        <li style="opacity: 0.6">
+                            <i class="fas fa-grin-tongue-wink fa-fw"></i>
+                            新役職「マッドメイト（狂人）」、「スパイ」
+                            <span class="text-yellow">開発中</span>
+                            <ul>
+                                <li>クルーの中からランダムに選ばれる。</li>
+                                <li>クルーとして振る舞うが、勝利条件は「インポスターの勝利」である。</li>
+                                <li>スパイはマッドメイトと違い、インポスターが誰か知ることができる。</li>
+                                <li>クルーからインポスターを庇う</li>
+                            </ul>
+                        </li>
+                        <li style="opacity: 0.6">
+                            <i class="fas fa-cat fa-fw"></i>
+                            新役職「猫又」
+                            <span class="text-yellow">開発中</span>
+                            <ul>
+                                <li>クルーの中からランダムに選ばれる。</li>
+                                <li>インポスターに殺された場合、インポスターも死ぬ</li>
+                                <li>吊られた場合、誰かもランダムに1人吊られる</li>
+                            </ul>
+                        </li>
+                        <li style="opacity: 0.6">
+                            <i class="fas fa-user-secret fa-fw"></i>
+                            ゲームモード「鬼ごっこ」
+                            <span class="text-yellow">開発中</span>
+                            <ul>
+                                <li>ゲーム開始時にインポスターの名前が全員に赤く見える</li>
+                                <li>常にコミュサボ（=情報が見られない）</li>
+                                <li>会議が常に0</li>
+                                <li>クルー視野MAX</li>
+                                <li>インポ視野0.25</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article id="getting-started">
+                <h1><i class="fas fa-download fa-fw"></i>導入方法</h1>
+                <p>参加するためには、お持ちのAmong Usにパッチを当てる必要があります。</p>
+                <p>「ちょっと難しそう…。」<br>って思うでしょ？意外と簡単です。Windows以外は。</p>
+                <p class="text-danger" style="font-size: 2rem;">Windows以外は！</p>
+                <p>
+                    <small class="text-dimmed" style="font-size: 0.8rem">
+                        いやー、Windowsゲーマーならゲームファイルいじるくらいやったことあるっしょ？（偏見）
+                    </small>
+                </p>
+                <p>以下にデバイスごとの導入手法を解説しています。自分の所有しているデバイスの欄を御覧ください。</p>
+                <aside class="alert bg-info mb-2">
+                    この手順は一度実行するだけでOKです。次回以降は「オンライン」選択後、右下の地球儀から「EbingUs」を選びます。
+                </aside>
+                <h2><i class="fab fa-windows fa-fw"></i> Windows</h2>
+                <ol>
+                    <li><a href="https://media.xeltica.work/gp/files/7685ae15-a1ab-4e82-a209-b0401662ce30.json">このJSONファイル</a>をダウンロードします。</li>
+                    <li><kbd>Ctrl+R</kbd>キーをデスクトップで押して、「ファイル名を指定して実行」アプリを起動。</li>
+                    <li><code>%APPDATA%/../LocalLow/Innersloth/Among Us</code>と入力し、OKを押して実行。</li>
+                    <li>出てきたフォルダに、先ほどダウンロードしたファイルをコピー（上書きしてOK）</li>
+                    <li>Among Usを立ち上げ、地球儀アイコンから「EbingUs」を選択</li>
+                    <li>導入完了です。次以降はこれを選択するだけでエビアス鯖に入れます！</li>
+                </ol>
+                <h2><i class="fas fa-mobile-alt fa-fw"></i> iOS / Android / macOS(Appleシリコン)</h2>
+                <ol>
+                    <li>Among Usを起動して、[オンライン]を選択した状態で、このページへ戻ってきてください。</li>
+                    <li>
+                        <div>
+                            <a href="amongus://init?servername=EbingUs&serverport=22023&serverip=172.105.242.153">このリンクをクリックする</a>
+                            か、以下のQRコードを読み込みます。
+                            <img src="qr.png" alt="QRコード" style="display: block">
+                        </div>
+                    </li>
+                    <li>一見何も変わってませんね？右下の地球儀をタップしましょう。<strong>EbingUs</strong>が追加されているはずなので選択します。</li>
+                    <li>導入完了です。次以降はこれを選択するだけでエビアス鯖に入れます！</li>
+                </ol>
+                <h2><i class="fas fa-gamepad fa-fw"></i> Nintendo Switch</h2>
+                <p>Nintendo Switchは現状対応していないです！ゴメンね。</p>
+            </article>
+            <article id="terms">
+                <h1><i class="fas fa-exclamation-triangle fa-fw"></i> 注意</h1>
+                <ul>
+                    <li>本サービスは非常に実験的です。本サービスを利用したことによるトラブルや損害などにつきまして、XelticaならびにEbing Usチームは一切の責任を負いかねます。</li>
+                    <li>動画や配信等で使用する場合、クレジットに本ウェブサイトへのリンクを何らかの形で含めた上で、非公式である旨を明らかにするようお願いします。</li>
+                    <li>本プロジェクトは非公式であり、本家開発者「InnerSloth」様とは一切関係ございません。公式に本サーバーについてのお問い合わせを行うことはお控えください。</li>
+                    <li>本サービスは方針変更などにより、予告なくサービスを停止する場合がございます。</li>
+                    <li>常識的なプレイをお願いします。サーバーに過度な負荷をかける行為や、不具合の穴をついて再起不能に陥らせるなどの行為につきましては、永続BANを行う場合もございます。</li>
+                </ul>
+            </article>
+            <article id="discord">
+                <iframe src="https://discord.com/widget?id=820301972318060545&theme=dark" width="350" height="500"
+                    allowtransparency="true" frameborder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </article>
+            <article id="command">
+                <h1><i class="fas fa-terminal fa-fw"></i> コマンド</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>コマンド名</th>
+                            <th>構文</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>てるてる切り替え</td>
+                            <td>
+                                <code>/jester &lt;on|off&gt;</code>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+        <footer class="text-center text-dimmed mt-5">
+            <p>(C)2021 Xeltica</p>
+            <p>本プロジェクトは非公式であり、本家開発者「InnerSloth」様とは一切関係ございません。公式に本サーバーについてのお問い合わせを行うことはお控えください。公式に迷惑のかからないよう、ご理解・ご協力よろしくおねがいします。</p>
+        </footer>
+    </div>
+</body>
+</html>

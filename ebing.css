@@ -1,0 +1,25 @@
+/* Ebing CSS */
+
+.e-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 64px;
+}
+
+.e-body {
+    --primary: lime;
+}
+
+.btn.au {
+    border-color: var(--fg);
+    color: var(--fg);
+    border-width: 2px;
+}
+
+.btn.au:hover, .btn.au:active, .btn.au:focus {
+    border-color: var(--primary);
+    color: var(--primary);
+}
